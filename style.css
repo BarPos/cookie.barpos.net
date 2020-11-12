@@ -1,0 +1,53 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    background: url(graphics/bg.png) repeat;
+    animation: scroll 60s linear infinite;
+}
+
+#container{
+    width: 350px;
+    height: fit-content;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+#buyAutoClicker{
+    cursor: pointer;
+}
+
+/* Cookie Count */
+
+#cookiesTextImg{
+    height: 30px;
+    float: left;
+}
+#cookiesText{
+    font-size: 25px;
+}
+
+
+/* Cookie Button */
+
+#cookieBtn{
+    width: min-content;
+    height: min-content;
+}
+.cookieImage{
+    width: 300px;
+    transition: .1s;
+}
+
+
+
+@keyframes scroll{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1920px -1080px;
+    }
+}

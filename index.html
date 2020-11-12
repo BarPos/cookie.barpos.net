@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie</title>
+    <title>Cookie Clicker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="cookie.js" defer></script>
 </head>
 <body>
-    <center>
-        <h1>Cookie</h1>
-        <hr>
-        <p>Test</p>
-    </center>
+    <div id="container">
+        <div id="header">
+            <div id="cookiesTextImg">
+                <img src="graphics/text/cookies.png" alt="" height="100%">
+            </div>
+            <div id="cookiesText">0</div>
+        </div>
+        <div id="cookieBtn" onmousedown="cookieCkick()" onmouseup="cookieUnClick()">
+            <img src="graphics/cookie.png" alt="" class="cookieImage" id="cookieImage">
+        </div>
+        <div id="shop">
+            <div id="buyAutoClicker" onclick="buyAutoClicker()">
+                Buy AutoClicker (100 cookies). You have 0
+            </div>
+        </div>
+    </div>
 </body>
 </html>
