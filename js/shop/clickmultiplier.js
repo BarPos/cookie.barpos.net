@@ -16,7 +16,7 @@ function multiplierBtnUnClick(){
     btn.style.transform = 'scale(1)'
 }
 function buyMultiplier(){
-    var price = 100+clickMultiplier*20;
+    var price = 100+clickMultiplier*120;
 
 
     if(cookies >= price){
