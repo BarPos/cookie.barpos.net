@@ -16,13 +16,13 @@ function multiplierBtnUnClick(){
     btn.style.transform = 'scale(1)'
 }
 function buyMultiplier(){
-    var price = 20+clickMultiplier*2;
+    var price = 100+clickMultiplier*4;
 
 
     if(cookies >= price){
         AddCookies(-price)
         clickMultiplier++
-        price = 20+clickMultiplier*2;
+        price = 100+clickMultiplier*4;
         multiplierButton.innerText = multiplierText.replace('%PRICE%', price.toLocaleString()).replace('%HAVE%', (clickMultiplier+1).toLocaleString())
     }
 }
