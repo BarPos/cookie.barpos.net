@@ -1,5 +1,11 @@
 *{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Gochi Hand', cursive;
+
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 body{
@@ -15,10 +21,6 @@ body{
     transform: translate(-50%, -50%);
 }
 
-#buyAutoClicker{
-    cursor: pointer;
-}
-
 /* Cookie Count */
 
 #cookiesTextImg{
@@ -26,7 +28,7 @@ body{
     float: left;
 }
 #cookiesText{
-    font-size: 25px;
+    font-size: 28px;
 }
 
 
@@ -37,10 +39,29 @@ body{
     height: min-content;
 }
 .cookieImage{
+    background: url(graphics/cookie.png);
+    background-size: 100%;
     width: 300px;
+    height: 300px;
     transition: .1s;
 }
 
+/* Autoclicker Button */
+
+#autockickerBtn{
+    cursor: pointer;
+}
+
+#autoclickerImg{
+    background: url(graphics/buttons/autoclicker.png);
+    background-size: 100%;
+    width: calc(550px * 0.3);
+    height: calc(134px * 0.3);
+    transition: .1s;
+}
+#buyautoclickerText{
+    font-size: 19px;
+}
 
 
 @keyframes scroll{

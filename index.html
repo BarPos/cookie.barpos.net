@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Clicker</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="cookie.js" defer></script>
 </head>
@@ -14,15 +14,19 @@
         <div id="header">
             <div id="cookiesTextImg">
                 <img src="graphics/text/cookies.png" alt="" height="100%">
+
             </div>
             <div id="cookiesText">0</div>
         </div>
         <div id="cookieBtn" onmousedown="cookieCkick()" onmouseup="cookieUnClick()">
-            <img src="graphics/cookie.png" alt="" class="cookieImage" id="cookieImage">
+            <div class="cookieImage" id="cookieImage"></div>
         </div>
         <div id="shop">
-            <div id="buyAutoClicker" onclick="buyAutoClicker()">
-                Buy AutoClicker (100 cookies). You have 0
+            <div id="buyAutoClicker">
+                <div id="autockickerBtn" onclick="buyAutoClicker()" onmousedown="AutockickerBtnClick()" onmouseup="AutockickerBtnUnClick()">
+                    <div id="autoclickerImg"></div>
+                </div>
+                <div id="buyautoclickerText">(100 cookies) You have 0</div>
             </div>
         </div>
     </div>
