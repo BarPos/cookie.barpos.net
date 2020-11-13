@@ -1,3 +1,9 @@
+<!--
+    ? Name: Cookie Clicker
+    ! Author: BarPos (https://twitter.com/BarPosWasTaken)
+    * GitHub: https://github.com/BarPosWasTaken/cookie.barpos.net
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="cookie.js" defer></script>
+    <script src="js/cookie.js" defer></script>
 </head>
 <body>
+    <!-- ? Fixed Elements -->
+    <div id="twitter">
+        <a href="https://twitter.com/BarPosWasTaken?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @BarPosWasTaken</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <a href="https://www.patreon.com/barpos" target="_blank" id="patreon">
+        <div id="patreonImg"></div>
+    </a>
+    <!-- * Fixed Elements -->
+
+    <!-- ? Game Container -->
     <div id="container">
         <div id="header">
             <div id="cookiesTextImg">
-                <img src="graphics/text/cookies.png" alt="" height="100%">
+                <!-- <img src="graphics/text/cookies.png" alt="" height="100%"> -->
 
             </div>
             <div id="cookiesText">0</div>
@@ -22,6 +38,12 @@
             <div class="cookieImage" id="cookieImage"></div>
         </div>
         <div id="shop">
+            <div id="buyClickMultiplier">
+                <div id="clickmultiplierBtn" onclick="buyMultiplier()" onmousedown="multiplierBtnClick()" onmouseup="multiplierBtnUnClick()">
+                    <div id="clickmultiplierImg"></div>
+                </div>
+                <div id="buyclickmultiplierText">(20 cookies) You will get 1 every click</div>
+            </div>
             <div id="buyAutoClicker">
                 <div id="autockickerBtn" onclick="buyAutoClicker()" onmousedown="AutockickerBtnClick()" onmouseup="AutockickerBtnUnClick()">
                     <div id="autoclickerImg"></div>
@@ -30,5 +52,6 @@
             </div>
         </div>
     </div>
+    <!-- * Game Container -->
 </body>
 </html>

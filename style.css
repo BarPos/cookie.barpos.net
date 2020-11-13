@@ -1,3 +1,9 @@
+/*
+    ? Name: Cookie Clicker
+    ! Author: BarPos (https://twitter.com/BarPosWasTaken)
+    * GitHub: https://github.com/BarPosWasTaken/cookie.barpos.net
+*/
+
 *{
     font-family: 'Gochi Hand', cursive;
 
@@ -8,10 +14,45 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+/* ? Body */
+
 body{
     background: url(graphics/bg.png) repeat;
     animation: scroll 60s linear infinite;
 }
+
+/* * Body */
+
+/* ? Fixed */
+
+#twitter{
+    position: fixed;
+
+    bottom: 5px;
+    right: 30px;
+
+    transform: scale(1.25);
+}
+
+#patreon{
+    position: fixed;
+
+    bottom: -2px;
+    right: 190px;
+
+    transform: scale(.5);
+}
+
+#patreonImg{
+    background: url(graphics/patreon.png);
+    background-size: 100%;
+    width: 156px;
+    height: 50px;
+}
+
+/* * Fixed */
+
+/* ? Container */
 
 #container{
     width: 350px;
@@ -21,23 +62,31 @@ body{
     transform: translate(-50%, -50%);
 }
 
-/* Cookie Count */
+/* * Container */
+
+/* ? Cookie Count */
 
 #cookiesTextImg{
     height: 30px;
+    width: 119.6px;
     float: left;
+    background: url(graphics/text/cookies.png);
+    background-size: 100%;
 }
+
 #cookiesText{
     font-size: 28px;
 }
 
+/* * Cookie Count */
 
-/* Cookie Button */
+/* ? Cookie Button */
 
 #cookieBtn{
     width: min-content;
     height: min-content;
 }
+
 .cookieImage{
     background: url(graphics/cookie.png);
     background-size: 100%;
@@ -46,7 +95,29 @@ body{
     transition: .1s;
 }
 
-/* Autoclicker Button */
+/* * Cookie Button */
+
+/* ? ClickMultiplier Button */
+
+#clickmultiplierBtn{
+    cursor: pointer;
+}
+
+#clickmultiplierImg{
+    background: url(graphics/buttons/clickmultiplier.png);
+    background-size: 100%;
+    width: calc(565px * 0.3);
+    height: calc(134px * 0.3);
+    transition: .1s;
+}
+
+#buyclickmultiplierText{
+    font-size: 19px;
+}
+
+/* * Clickmultiplier Button */
+
+/* ? Autoclicker Button */
 
 #autockickerBtn{
     cursor: pointer;
@@ -59,10 +130,14 @@ body{
     height: calc(134px * 0.3);
     transition: .1s;
 }
+
 #buyautoclickerText{
     font-size: 19px;
 }
 
+/* * Autoclicker Button */
+
+/* ? Animations */
 
 @keyframes scroll{
     0% {
@@ -72,3 +147,5 @@ body{
         background-position: -1920px -1080px;
     }
 }
+
+/* * Animations */
