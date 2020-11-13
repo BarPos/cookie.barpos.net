@@ -22,7 +22,7 @@ function buyMultiplier(){
     if(cookies >= price){
         AddCookies(-price)
         clickMultiplier++
-        price = 100+clickMultiplier*50;
+        price = 100+clickMultiplier*120;
         multiplierButton.innerText = multiplierText.replace('%PRICE%', price.toLocaleString()).replace('%HAVE%', (clickMultiplier+1).toLocaleString())
     }
 }
